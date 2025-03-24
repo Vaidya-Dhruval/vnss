@@ -1,0 +1,14 @@
+tk
+tkcalendar
+mysql-connector-python
+numpy
+pandas
+eqldata
+sqlalchemy
+keras
+tensorflow
+matplotlib
+openpyxl
+python-docx
+scipy
+scikit-learn
