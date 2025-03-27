@@ -1,10 +1,33 @@
 version: '3.8'
+
 services:
   app:
     build: .
-    ports:
-      - "8000:8000"
+    container_name: shiv_app
+    depends_on:
+      - db
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=root
+      - DATABASE_NAME=mydb
     volumes:
       - .:/app
+    ports:
+      - "5000:5000"
+    command: ["python", "main.py"]
+
+  db:
+    image: mysql:8
+    container_name: shiv_db
+    restart: always
     environment:
-      - VIRTUAL_ENV=/app/venv
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
