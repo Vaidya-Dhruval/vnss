@@ -31,6 +31,6 @@ EXPOSE 8000
 # Change this depending on your app
 
 # Run the application (adjust this command based on your entry point)
-CMD ["python", "app.py"] 
+CMD ["python", "main.py"] 
 
 # Replace app.py with your entry script

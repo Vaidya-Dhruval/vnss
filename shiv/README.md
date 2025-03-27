@@ -18,14 +18,16 @@ To create and activate a virtual environment named "vnss", follow these steps:
 If 'python' doesn't work than use py or python3
 
 ```python 
-vnns/Scripts/bin/activate
+.\vnns\Scripts\activate
 ```
 
 ### 2. Install Dependencies
 
 With the virtual environment activated, install the required packages:
-
-- There is a file called dependencies.txt use that to install all the dependencies requred for the project.
+```python 
+pip install -r requirements.txt
+```
+- There is a file called requirements.txt use that to install all the dependencies requred for the project.
 ### 3. Configure the SQL Database
 
 Install MySQL installer using default settings.
