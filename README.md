@@ -48,15 +48,8 @@ pip install -r requirements.txt
 
 Install MySQL installer using default settings.
 
-## Docker setup(Optional)
-- # Installing Docker on Windows
-=====================================================
-
-## Prerequisites
----------------
-
-1. **Windows Version**: Ensure you are using Windows 10 Pro, Enterprise, or Education (64-bit).
-2. **CPU Virtualization**: Enable CPU virtualization in your BIOS settings.
+# Docker setup(Optional)
+## Installing Docker on Windows
 
 ## Installation Steps
 --------------------
